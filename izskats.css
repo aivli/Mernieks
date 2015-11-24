@@ -1,0 +1,336 @@
+body 
+{
+background-color:#282828;
+font-family: 'Open Sans', sans-serif;
+}
+
+#saturs
+{
+ margin-left: auto;
+ margin-right: auto;
+ width: 1200px;
+ background-image: url("img/fons_gaiss_texture.jpg");
+ background-repeat: repeat-y;
+}
+
+#header, #slider, #container, #par_mums, #klienti, #footer
+{margin-left: auto;
+ margin-right: auto;
+ width: 1200px;
+
+}
+#header{
+	height:90px;
+	background-color: #473a2d;
+}
+.logo {
+display:block;
+float:left;
+width: 180px;
+  padding: 20px 30px 10px 75px;
+}
+.sadalas{ 
+	display:block;
+	  float:right;
+ text-align:right;
+      color:white;
+margin:10px 0 0 0;
+padding:0 30px 0 5px;
+
+}
+.sadalas ul li 
+{
+display:inline-block;
+margin:0;
+padding:5px;
+}
+.sadalas a
+{text-decoration:none;
+	padding: 10px 5px;
+color: white;
+}
+.sadalas li:hover
+{
+background: #5b4d3b;
+}
+
+.valodas
+{
+	border-left: 1px solid white;
+		display:block;
+	  float:right;
+ text-align:right;
+      color:white;
+margin:10px 0 0 0;
+padding:0 75px 0 5px;
+}
+.valodas ul li
+{
+display:inline-block;
+padding:5px;
+}
+#slider{
+	Display:block;
+   position:relative;
+    z-index:1;
+	height:508px;
+}
+#slider .slide_text
+{
+position:absolute;
+     left: 150px;
+     top: 150px;
+     z-index: 2;
+	 background-color: black;
+	 opacity:0.4;
+}
+#slider .slide_text h1
+{
+	margin: 7px;
+	color:white;
+}
+#slider .slide_text2
+{
+position:absolute;
+     left: 150px;
+     top: 230px;
+     z-index: 2;
+	background-color: black;
+	 opacity:0.4;
+}
+.slide_text2 p
+{
+	margin: 7px;
+	color:white;
+}
+#pakalpojumi 
+{
+	 background-image: url("img/fons_gaiss_texture.jpg");
+ background-repeat: repeat-y;
+}
+.cont_nosaukums
+{
+	margin: 0 75px 0 75px;
+	text-align: center;
+	font-size: 200%;
+	padding:10px;
+	color:#9d8343;
+	border-bottom: 1px dashed #7f7065;
+}
+#par_mums
+{
+	 background-image: url("img/brunais_fons.png");
+ background-repeat: repeat-y;
+}
+#klienti 
+{
+	 background-image: url("img/fons_gaiss_texture.jpg");
+ background-repeat: repeat-y;
+}
+.klientu_bildes
+{padding-left:65px;
+padding-right:65px;
+padding-bottom:30px;
+padding-top:20px;
+}
+
+.klientu_bildes
+{
+
+	text-align: justify;
+}
+.klientu_bildes:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+    }
+
+
+#klienti img{
+	padding:15px;
+display:inline-block;
+opacity:0.4;
+}
+	
+#klienti img:hover{
+
+	display:inline-block;
+opacity:1}
+
+
+#kontakti
+{
+	 background-image: url("img/brunais_fons.png");
+ background-repeat: repeat-y;
+ height:500px;
+}
+.karte
+{display:block;
+width:370px;
+float:left;
+margin:75px 0 30px 75px;
+
+}
+.kontaktforma
+{
+	display:inline-block;
+	width:350px;
+float:right;
+margin:59px 75px 20px 0;
+ padding-left:20px;
+ color:#9d8343;
+}
+
+.kontaktinf
+{ 
+display:inline-block;
+width:310px;
+padding-top:30px;
+ text-align:center;
+ color:#9d8343;
+}
+form input 
+{margin-right:5px;
+margin-bottom:5px;
+background-color:#7f6c42;
+color:#a38a55
+}
+
+form textarea
+{margin-right:5px;
+margin-bottom:5px;
+background-color:#7f6c42;
+color:#a38a55
+}
+.cenas
+{
+	width:1200px
+}
+.izcenojums_left
+{
+	display:block;
+	float:left;
+	width:505px;
+	margin: 20px 20px 30px 75px;
+	color:#685e46;
+	
+}
+
+.izcenojums_right
+{
+	display:inline-block;
+	width:505px;
+	margin: 20px 75px 30px 20px;
+	color:#685e46;
+}
+
+.izcenojums_left table td
+
+{
+	padding:5px 15px 5px 15px;
+	color:#685e46;
+}
+.izcenojums_right table td
+
+{
+	padding:5px 15px 5px 15px;
+	color:#685e46;
+}
+
+
+.t1_c1
+{
+	text-align:left;
+	font-size:90%;
+	width:405px;
+}
+.t1_c2
+{
+	text-align:center;
+	width:40px;
+}
+.t2_c1
+{
+	text-align:left;
+	font-size:90%;
+	width:405px;
+}
+.t2_c2
+{
+	text-align:center;
+	width:40px;
+}
+.izcenojums_left table
+{
+	table-layout: fixed;
+	width:505px;
+}
+
+.izcenojums_left table tr:nth-child(even) 
+{
+background-color:#f2ebe1;
+} 
+
+
+.izcenojums_right table
+{
+	table-layout: fixed;
+	width:505px;
+}
+.izcenojums_right table tr:nth-child(even) 
+{
+background-color:#f2ebe1;
+} 
+
+.pakalp1
+{
+	display:block;
+	float:left;
+	margin-left:75px;
+	width:350px;
+	margin-top:30px;
+}
+.pakalp2
+{
+	display:inline-block;
+	width:350px;
+	margin-top:30px;
+}
+.pakalp3
+{
+	display:inline-block;
+	float:right;
+	margin-right:75px;
+	width:350px;
+	margin-top:30px;
+}
+.pakalp_bilde
+{
+	display:inline;
+}
+
+.pakalp_bilde img
+{
+	padding-right:20px;
+	float:left;
+
+
+
+}
+.pakalp_teksts
+{
+	color:#473a15;
+	 overflow: hidden;
+	 padding-right:10px;
+}
+
+.container
+{
+	height:550px;
+}
+
+.par_teksts
+{
+	padding:30px 75px;
+	color:white;
+}
