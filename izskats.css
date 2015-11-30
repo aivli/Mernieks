@@ -20,23 +20,23 @@ font-family: 'Open Sans', sans-serif;
 
 }
 #header{
-	height:90px;
+	height:82px;
 	background-color: #473a2d;
 }
 .logo {
 display:block;
 float:left;
 width: 180px;
-  padding: 20px 30px 10px 75px;
+  padding: 20px 20px 0 85px;
 }
 .sadalas{ 
 	display:block;
 	  float:right;
  text-align:right;
       color:white;
-margin:10px 0 0 0;
+margin:12px 0 0 0;
 padding:0 30px 0 5px;
-
+font-size:12.84px;
 }
 .sadalas ul li 
 {
@@ -61,17 +61,27 @@ background: #5b4d3b;
 	  float:right;
  text-align:right;
       color:white;
-margin:10px 0 0 0;
-padding:0 75px 0 5px;
+margin:13px 0 0 0;
+padding:0 85px 0 5px;
+font-size:11.13px;
 }
-.valodas ul li
+.valodas li
 {
 display:inline-block;
-padding:5px;
+padding-top:8px;
+padding-left:5px;
+padding-bottom:8px;
 }
+
+.valodas ul
+{
+display:inline-block;
+padding-left:29px;
+}
+
 #slider{
 	Display:block;
-   position:relative;
+	position:relative;
     z-index:1;
 	height:508px;
 }
@@ -79,29 +89,36 @@ padding:5px;
 {
 position:absolute;
      left: 150px;
-     top: 150px;
+     top: 195px;
      z-index: 2;
-	 background-color: black;
-	 opacity:0.4;
+	 background-color: rgba(0,0,0,0.5);
+	 margin: 10px;
+	color:white;
+	padding:10px 18px;
+	
 }
 #slider .slide_text h1
 {
-	margin: 7px;
-	color:white;
+	margin: 0;
+	font-size:37.66px;
+	font-weight:normal;
 }
 #slider .slide_text2
 {
 position:absolute;
      left: 150px;
-     top: 230px;
+     top: 285px;
      z-index: 2;
-	background-color: black;
-	 opacity:0.4;
+	 background-color: rgba(0,0,0,0.5);
+	 margin: 10px;
+	color:white;
+	line-height:36px;
+	padding:10px 18px;
 }
 .slide_text2 p
 {
-	margin: 7px;
-	color:white;
+margin:0;
+font-size:20.54px;
 }
 #pakalpojumi 
 {
@@ -110,52 +127,28 @@ position:absolute;
 }
 .cont_nosaukums
 {
-	margin: 0 75px 0 75px;
+	margin: 0 85px 0 85px;
 	text-align: center;
-	font-size: 200%;
-	padding:10px;
+	font-size: 25.68px;
+	padding:28px;
 	color:#9d8343;
 	border-bottom: 1px dashed #7f7065;
+	text-transform: uppercase;
 }
 #par_mums
 {
 	 background-image: url("img/brunais_fons.png");
  background-repeat: repeat-y;
+ height:950px;
 }
 #klienti 
 {
 	 background-image: url("img/fons_gaiss_texture.jpg");
- background-repeat: repeat-y;
+	background-repeat: repeat-y;
+	Display:block;
+	position:relative;
+    z-index:1;
 }
-.klientu_bildes
-{padding-left:65px;
-padding-right:65px;
-padding-bottom:30px;
-padding-top:20px;
-}
-
-.klientu_bildes
-{
-
-	text-align: justify;
-}
-.klientu_bildes:after {
-	content: "";
-	width: 100%;
-	display: inline-block;
-    }
-
-
-#klienti img{
-	padding:15px;
-display:inline-block;
-opacity:0.4;
-}
-	
-#klienti img:hover{
-
-	display:inline-block;
-opacity:1}
 
 
 #kontakti
@@ -166,9 +159,9 @@ opacity:1}
 }
 .karte
 {display:block;
-width:370px;
+width:365px;
 float:left;
-margin:75px 0 30px 75px;
+margin:75px 0 30px 85px;
 
 }
 .kontaktforma
@@ -176,7 +169,7 @@ margin:75px 0 30px 75px;
 	display:inline-block;
 	width:350px;
 float:right;
-margin:59px 75px 20px 0;
+margin:59px 85px 20px 0;
  padding-left:20px;
  color:#9d8343;
 }
@@ -184,7 +177,7 @@ margin:59px 75px 20px 0;
 .kontaktinf
 { 
 display:inline-block;
-width:310px;
+width:295px;
 padding-top:30px;
  text-align:center;
  color:#9d8343;
@@ -210,18 +203,20 @@ color:#a38a55
 {
 	display:block;
 	float:left;
-	width:505px;
-	margin: 20px 20px 30px 75px;
+	width:495px;
+	margin: 20px 20px 30px 85px;
 	color:#685e46;
+	font-size:15.41px;
 	
 }
 
 .izcenojums_right
 {
 	display:inline-block;
-	width:505px;
-	margin: 20px 75px 30px 20px;
+	width:495px;
+	margin: 20px 85px 30px 20px;
 	color:#685e46;
+	font-size:15.41px;
 }
 
 .izcenojums_left table td
@@ -229,6 +224,7 @@ color:#a38a55
 {
 	padding:5px 15px 5px 15px;
 	color:#685e46;
+	font-size:11.98px;
 }
 .izcenojums_right table td
 
@@ -241,33 +237,37 @@ color:#a38a55
 .t1_c1
 {
 	text-align:left;
-	font-size:90%;
-	width:405px;
+	font-size:11.98px;
+	width:400px;
 }
 .t1_c2
 {
 	text-align:center;
-	width:40px;
+	width:35px;
 }
 .t2_c1
 {
 	text-align:left;
-	font-size:90%;
-	width:405px;
+	width:400px;
 }
 .t2_c2
 {
 	text-align:center;
-	width:40px;
+	width:35px;
 }
 .izcenojums_left table
 {
 	table-layout: fixed;
-	width:505px;
+	width:495px;
+	border-collapse: collapse; 
+	font-size:11.98px;
 }
 
 .izcenojums_left table tr:nth-child(even) 
 {
+
+	border-top: thin solid;
+	border-color:#dfd9cf;
 background-color:#f2ebe1;
 } 
 
@@ -275,10 +275,15 @@ background-color:#f2ebe1;
 .izcenojums_right table
 {
 	table-layout: fixed;
-	width:505px;
+	width:495px;
+	border-collapse: collapse; 
+	font-size:11.98px;
 }
 .izcenojums_right table tr:nth-child(even) 
 {
+
+	border-top: thin solid;
+	border-color:#dfd9cf;
 background-color:#f2ebe1;
 } 
 
@@ -286,22 +291,22 @@ background-color:#f2ebe1;
 {
 	display:block;
 	float:left;
-	margin-left:75px;
-	width:350px;
+	margin-left:85px;
+	width:343px;
 	margin-top:30px;
 }
 .pakalp2
 {
 	display:inline-block;
-	width:350px;
+	width:343px;
 	margin-top:30px;
 }
 .pakalp3
 {
 	display:inline-block;
 	float:right;
-	margin-right:75px;
-	width:350px;
+	margin-right:85px;
+	width:343px;
 	margin-top:30px;
 }
 .pakalp_bilde
@@ -322,15 +327,340 @@ background-color:#f2ebe1;
 	color:#473a15;
 	 overflow: hidden;
 	 padding-right:10px;
+	 font-size:13.69px;
+}
+.pakalp_teksts h2
+{
+	color:#473a15;
+	 overflow: hidden;
+	 padding-right:10px;
+	 font-size:20.54px;
+	 font-weight:bold;
 }
 
 .container
 {
-	height:550px;
+	height:450px;
 }
 
 .par_teksts
 {
-	padding:30px 75px;
+	padding:30px 85px;
 	color:white;
 }
+input {
+    border:none;
+}
+textarea {
+    border:none;
+}
+
+input[type=submit] {
+    width: 100px;
+	height: 30px;
+	color:#f9e09e;
+	font-weight: bold;
+}
+.par_augsa
+{
+	height:300px;
+}
+.par_kreisais
+{
+	float:left;
+	margin-left:85px;
+	width:515px;
+	text-align:center;
+	height:300px;
+}
+
+.par_labais
+{
+	display:inline-block;
+	float:right;
+	margin-right:85px;
+	width:515px;
+	text-align:center;
+	height:300px;	
+}
+.par_kreisais2
+{
+	float:left;
+	width:600px;
+	text-align:left;
+	height:330px;
+}
+
+.par_labais2
+{
+	display:inline-block;
+	float:right;
+	width:600px;
+	text-align:left;
+	height:330px;	
+}
+.sertifikata_bilde{
+	display:inline-block;
+	float:left;
+	padding-left:10px;
+}
+
+.sertifikata_apraksts
+{
+	display:inline-block;
+	float:left;
+	width:150px;
+	color:white;
+	font-size:11.13px;
+	line-height:15.41px;
+	padding-left:10px;
+	text-align:left;
+}
+.sertifikati_left
+{
+	display:block;
+	position:relative;
+	width:487px;
+	height:75px;
+	background-color:#624e36;
+	margin:0 28px 0 85px;
+	
+}
+.sertifikati_right
+{
+	display:block;
+	position:relative;
+	width:487px;
+	height:75px;
+	background-color:#624e36;
+	margin:0 85px 0 28px;
+	
+}
+.sertifikatu_saraksts
+{
+	display:table;
+	height:45px;
+	margin:auto;
+	padding-top:15px;
+
+}
+
+.darbimieka_apraksts_right
+{
+color:white;
+padding: 10px 85px 10px 28px;
+font-size:13.69px;
+line-height:25.68px;
+}
+.darbimieka_apraksts_left
+{
+color:white;
+padding: 10px 28px 10px 85px;
+font-size:13.69px;
+line-height:25.68px;
+}
+.vards_uzvards
+{
+	color:#c7a457;
+	font-size:30.81px;
+}
+.darbinieka_kontakti
+{
+	color:#c7a457;
+	font-size:15.41px;
+	line-height:20.54px;
+}
+.lrzm 
+{	
+	display:inline-block;
+	background-image:url("_temp/klienti/LRZM_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+	}
+.lvm
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/LVM_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;	
+}
+
+.gibson 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/Gibson_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+}
+
+.busines-builder 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/Busines-Builder_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+}
+.baltic-s-forestry 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/Baltic-S-Forestry_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+}
+
+.statoil 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/Statoil_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+}
+
+.casamona 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/casamona_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+}
+
+.blueroots 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/blueroots_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+}
+
+.lvc 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/LVC_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+}
+
+.latvenergo 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/latvenergo_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+}
+
+.filterline 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/filterline_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+}
+
+.lmt 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/lmt_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+}
+
+.brivosta 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/brivosta_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+}
+
+.ventbunkers 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/ventbunkers_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+}
+
+.latio 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/latio_o.png");
+	background-repeat: no-repeat;
+    background-position: center;
+	margin:15px;
+}
+
+.ventspils 
+{
+	display:inline-block;
+	background-image:url("_temp/klienti/ventspils_o.png");
+	background-repeat: no-repeat;
+     background-position: center; 
+	 margin:15px;
+}
+.klientu_bildes
+{padding-left:75px;
+padding-right:75px;
+padding-bottom:30px;
+padding-top:20px;
+}
+
+.klientu_bildes
+{
+
+	text-align: justify;
+}
+.klientu_bildes:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+    }
+
+
+.klientu_bildes img{
+
+display:inline-block;
+opacity:0;
+padding-top:5px;
+}
+	
+.klientu_bildes img:hover{
+
+	display:inline-block;
+opacity:1}
+
+.uz_augsu
+{
+	display:block;
+	background-color:#bfb399;
+position:absolute;
+     left: 1133px;
+     top: 430px;
+	 z-index:2;
+	 border:1px solid white
+}
+.uz_augsu img
+{
+	padding:5px;
+	opacity:0.4;
+
+}
+.uz_augsu img:hover
+{
+	padding:5px;
+	opacity:1;
+}
+
