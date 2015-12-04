@@ -1,82 +1,87 @@
 body 
 {
-background-color:#282828;
-font-family: 'Open Sans', sans-serif;
+	background-color:#282828;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #saturs
 {
- margin-left: auto;
- margin-right: auto;
- width: 1200px;
- background-image: url("img/fons_gaiss_texture.jpg");
- background-repeat: repeat-y;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	background-image: url("img/fons_gaiss_texture.jpg");
+	background-repeat: repeat-y;
+	overflow:hidden;
 }
 
 #header, #slider, #container, #par_mums, #klienti, #footer
-{margin-left: auto;
- margin-right: auto;
- width: 1200px;
-
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
 }
-#header{
-	height:82px;
+#header
+{
+	overflow:hidden;
 	background-color: #473a2d;
 }
-.logo {
-display:block;
-float:left;
-width: 180px;
-  padding: 20px 20px 0 85px;
-}
-.sadalas{ 
+.logo
+ {
 	display:block;
-	  float:right;
- text-align:right;
-      color:white;
-margin:12px 0 0 0;
-padding:0 30px 0 5px;
-font-size:12.84px;
+	float:left;
+	width: 180px;
+	padding: 20px 20px 0 85px;
+}
+.sadalas
+{ 
+	display:block;
+	float:right;
+	text-align:right;
+    color:white;
+	margin:12px 0 0 0;
+	padding:0 30px 0 5px;
+	font-size:12.84px;
 }
 .sadalas ul li 
 {
-display:inline-block;
-margin:0;
-padding:5px;
+	display:inline-block;
+	margin:0;
+	padding:5px;
 }
 .sadalas a
-{text-decoration:none;
+{
+	text-decoration:none;
 	padding: 10px 5px;
-color: white;
+	color: white;
 }
 .sadalas li:hover
 {
-background: #5b4d3b;
+	background: #5b4d3b;
 }
 
 .valodas
 {
 	border-left: 1px solid white;
-		display:block;
-	  float:right;
- text-align:right;
-      color:white;
-margin:13px 0 0 0;
-padding:0 85px 0 5px;
-font-size:11.13px;
+	display:block;
+	float:right;
+	text-align:right;
+    color:white;
+	margin:13px 0 0 0;
+	padding:0 85px 0 5px;
+	font-size:11.13px;
 }
 .valodas li
 {
-display:inline-block;
-padding-top:8px;
-padding-left:5px;
-padding-bottom:8px;
+	display:inline-block;
+	padding-top:8px;
+	padding-left:5px;
+	padding-bottom:8px;
 }
 
 .valodas ul
 {
-display:inline-block;
-padding-left:29px;
+	display:inline-block;
+	padding-left:29px;
 }
 
 #slider{
@@ -85,47 +90,70 @@ padding-left:29px;
     z-index:1;
 	height:508px;
 }
-#slider .slide_text
+.slide_virsraksts
 {
-position:absolute;
-     left: 150px;
-     top: 195px;
-     z-index: 2;
-	 background-color: rgba(0,0,0,0.5);
-	 margin: 10px;
+	position:absolute;
+    left: 150px;
+    top: 195px;
+    z-index: 2;
+	background-color: rgba(0,0,0,0.5);
+	margin: 10px;
 	color:white;
 	padding:10px 18px;
 	
 }
-#slider .slide_text h1
+.slide_virsraksts h1
 {
 	margin: 0;
 	font-size:37.66px;
 	font-weight:normal;
 }
-#slider .slide_text2
+.slide_text
 {
-position:absolute;
-     left: 150px;
-     top: 285px;
-     z-index: 2;
-	 background-color: rgba(0,0,0,0.5);
-	 margin: 10px;
+	position:absolute;
+    left: 150px;
+    top: 285px;
+    z-index: 2;
+	background-color: rgba(0,0,0,0.5);
+	margin: 10px;
 	color:white;
 	line-height:36px;
 	padding:10px 18px;
 }
-.slide_text2 p
+.slide_text p
 {
-margin:0;
-font-size:20.54px;
+	margin:0;
+	font-size:20.54px;
 }
+
+.slider-pa-kreisi
+{
+	position:absolute;
+	left:50px;
+	top:205px;
+}
+
+.slider-pa-labi
+{
+	position:absolute;
+	right:50px;
+	top:205px;
+}
+.pogas-apaksa
+{
+	position:absolute;
+	left:570px;
+	top:480px;
+}
+
+
 #pakalpojumi 
 {
-	 background-image: url("img/fons_gaiss_texture.jpg");
- background-repeat: repeat-y;
+	background-image: url("img/fons_gaiss_texture.jpg");
+	background-repeat: repeat-y;
+	overflow:hidden;
 }
-.cont_nosaukums
+.sadalas_nosaukums
 {
 	margin: 0 85px 0 85px;
 	text-align: center;
@@ -137,13 +165,12 @@ font-size:20.54px;
 }
 #par_mums
 {
-	 background-image: url("img/brunais_fons.png");
- background-repeat: repeat-y;
- height:950px;
+	background-image: url("img/brunais_fons.png");
+	background-repeat: repeat-y;
+	overflow:hidden;
 }
 #klienti 
 {
-	 background-image: url("img/fons_gaiss_texture.jpg");
 	background-repeat: repeat-y;
 	Display:block;
 	position:relative;
@@ -153,47 +180,51 @@ font-size:20.54px;
 
 #kontakti
 {
-	 background-image: url("img/brunais_fons.png");
- background-repeat: repeat-y;
- height:500px;
+	background-image: url("img/brunais_fons.png");
+	background-repeat: repeat-y;
+	overflow:hidden;
 }
 .karte
-{display:block;
-width:365px;
-float:left;
-margin:75px 0 30px 85px;
-
+{
+	display:inline-block;
+	width:343px;
+	float:left;
+	margin:75px 0 30px 85px;
 }
 .kontaktforma
 {
 	display:inline-block;
-	width:350px;
-float:right;
-margin:59px 85px 20px 0;
- padding-left:20px;
- color:#9d8343;
+	width:343px;
+	float:right;
+	margin:0 85px 0 0;
+	padding-top:59px;
+	padding-bottom:20px;
+	color:#9d8343;
 }
 
-.kontaktinf
+.kontaktinformacija
 { 
-display:inline-block;
-width:295px;
-padding-top:30px;
- text-align:center;
- color:#9d8343;
+	display:inline-block;
+	float:left;
+	width:343px;
+	padding-top:30px;
+	text-align:center;
+	color:#9d8343;
 }
 form input 
-{margin-right:5px;
-margin-bottom:5px;
-background-color:#7f6c42;
-color:#a38a55
+{
+	margin-right:5px;
+	margin-bottom:5px;
+	background-color:#7f6c42;
+	color:#a38a55
 }
 
 form textarea
-{margin-right:5px;
-margin-bottom:5px;
-background-color:#7f6c42;
-color:#a38a55
+{
+	margin-right:5px;
+	margin-bottom:5px;
+	background-color:#7f6c42;
+	color:#a38a55
 }
 .cenas
 {
@@ -268,7 +299,7 @@ color:#a38a55
 
 	border-top: thin solid;
 	border-color:#dfd9cf;
-background-color:#f2ebe1;
+	background-color:#f2ebe1;
 } 
 
 
@@ -284,10 +315,10 @@ background-color:#f2ebe1;
 
 	border-top: thin solid;
 	border-color:#dfd9cf;
-background-color:#f2ebe1;
+	background-color:#f2ebe1;
 } 
 
-.pakalp1
+.pakalpojumi-pa-kreisi
 {
 	display:block;
 	float:left;
@@ -295,13 +326,13 @@ background-color:#f2ebe1;
 	width:343px;
 	margin-top:30px;
 }
-.pakalp2
+.pakalpojumi-pa-vidu
 {
 	display:inline-block;
 	width:343px;
 	margin-top:30px;
 }
-.pakalp3
+.pakalpojumi-pa-labi
 {
 	display:inline-block;
 	float:right;
@@ -338,9 +369,9 @@ background-color:#f2ebe1;
 	 font-weight:bold;
 }
 
-.container
+.pakalpojumi-container
 {
-	height:450px;
+	overflow:hidden;
 }
 
 .par_teksts
