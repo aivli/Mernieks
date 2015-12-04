@@ -4,33 +4,56 @@ body
 	font-family: 'Open Sans', sans-serif;
 }
 
-#saturs
+.saturs
 {
-	margin-left: auto;
-	margin-right: auto;
-	width: 1200px;
-	background-image: url("img/fons_gaiss_texture.jpg");
-	background-repeat: repeat-y;
+	background-image: url("img/fons_gaiss_texture.png");
 	overflow:hidden;
 }
-
-#header, #slider, #container, #par_mums, #klienti, #footer
+.section-container
 {
-	margin-left: auto;
-	margin-right: auto;
-	width: 1200px;
+	padding-left:85px;
+	padding-right:85px;
+	overflow:hidden;
 }
-#header
+.section-container-b
 {
+	padding-left:85px;
+	padding-right:85px;
+	background-image: url("img/brunais_fons.png");
+	overflow:hidden;
+}
+.header-container
+{
+	padding-left:85px;
+	padding-right:85px;
 	overflow:hidden;
 	background-color: #473a2d;
 }
+.slider-container
+{
+	padding-left:85px;
+	padding-right:85px;
+	Display:block;
+	position:relative;
+    z-index:1;
+	overflow:hidden;
+}
+.klienti-container
+{
+	padding-left:85px;
+	padding-right:85px;
+	Display:block;
+	position:relative;
+    z-index:1;
+	overflow:hidden;
+}
+
 .logo
  {
 	display:block;
 	float:left;
 	width: 180px;
-	padding: 20px 20px 0 85px;
+	padding: 20px 20px 0 0;
 }
 .sadalas
 { 
@@ -67,7 +90,7 @@ body
 	text-align:right;
     color:white;
 	margin:13px 0 0 0;
-	padding:0 85px 0 5px;
+	padding:0 0 0 5px;
 	font-size:11.13px;
 }
 .valodas li
@@ -84,34 +107,31 @@ body
 	padding-left:29px;
 }
 
-#slider{
-	Display:block;
-	position:relative;
-    z-index:1;
-	height:508px;
+.slider-container>img
+{
+	width:100%;
 }
-.slide_virsraksts
+.slide-virsraksts
 {
 	position:absolute;
-    left: 150px;
+    left: 235px;
     top: 195px;
     z-index: 2;
 	background-color: rgba(0,0,0,0.5);
 	margin: 10px;
 	color:white;
 	padding:10px 18px;
-	
 }
-.slide_virsraksts h1
+.slide-virsraksts h1
 {
 	margin: 0;
 	font-size:37.66px;
 	font-weight:normal;
 }
-.slide_text
+.slide-text
 {
 	position:absolute;
-    left: 150px;
+    left: 235px;
     top: 285px;
     z-index: 2;
 	background-color: rgba(0,0,0,0.5);
@@ -120,7 +140,7 @@ body
 	line-height:36px;
 	padding:10px 18px;
 }
-.slide_text p
+.slide-text p
 {
 	margin:0;
 	font-size:20.54px;
@@ -129,33 +149,26 @@ body
 .slider-pa-kreisi
 {
 	position:absolute;
-	left:50px;
+	left:135px;
 	top:205px;
 }
 
 .slider-pa-labi
 {
 	position:absolute;
-	right:50px;
+	right:135px;
 	top:205px;
 }
 .pogas-apaksa
 {
 	position:absolute;
-	left:570px;
-	top:480px;
+	bottom:10px;
+	left:49%;
 }
 
 
-#pakalpojumi 
+.sadalas-nosaukums
 {
-	background-image: url("img/fons_gaiss_texture.jpg");
-	background-repeat: repeat-y;
-	overflow:hidden;
-}
-.sadalas_nosaukums
-{
-	margin: 0 85px 0 85px;
 	text-align: center;
 	font-size: 25.68px;
 	padding:28px;
@@ -163,40 +176,20 @@ body
 	border-bottom: 1px dashed #7f7065;
 	text-transform: uppercase;
 }
-#par_mums
-{
-	background-image: url("img/brunais_fons.png");
-	background-repeat: repeat-y;
-	overflow:hidden;
-}
-#klienti 
-{
-	background-repeat: repeat-y;
-	Display:block;
-	position:relative;
-    z-index:1;
-}
 
 
-#kontakti
-{
-	background-image: url("img/brunais_fons.png");
-	background-repeat: repeat-y;
-	overflow:hidden;
-}
 .karte
 {
 	display:inline-block;
-	width:343px;
+	width:33.3%;
 	float:left;
-	margin:75px 0 30px 85px;
+	margin:75px 0 30px 0;
 }
 .kontaktforma
 {
 	display:inline-block;
-	width:343px;
+	width:33.3%;
 	float:right;
-	margin:0 85px 0 0;
 	padding-top:59px;
 	padding-bottom:20px;
 	color:#9d8343;
@@ -206,7 +199,7 @@ body
 { 
 	display:inline-block;
 	float:left;
-	width:343px;
+	width:33.3%;
 	padding-top:30px;
 	text-align:center;
 	color:#9d8343;
@@ -228,36 +221,39 @@ form textarea
 }
 .cenas
 {
-	width:1200px
+	width:100%;
+	overflow:hidden;
 }
-.izcenojums_left
+.izcenojums-left
 {
 	display:block;
 	float:left;
-	width:495px;
-	margin: 20px 20px 30px 85px;
+	width:48%;
+	margin: 20px 0 30px 0;
 	color:#685e46;
 	font-size:15.41px;
-	
+	padding:10px;
 }
 
-.izcenojums_right
+.izcenojums-right
 {
 	display:inline-block;
-	width:495px;
-	margin: 20px 85px 30px 20px;
+	width:48%;
+	float:right;
+	margin: 20px 0 30px 0;
 	color:#685e46;
 	font-size:15.41px;
+	padding:10px;
 }
 
-.izcenojums_left table td
+.izcenojums-left table td
 
 {
 	padding:5px 15px 5px 15px;
 	color:#685e46;
 	font-size:11.98px;
 }
-.izcenojums_right table td
+.izcenojums-right table td
 
 {
 	padding:5px 15px 5px 15px;
@@ -269,50 +265,49 @@ form textarea
 {
 	text-align:left;
 	font-size:11.98px;
-	width:400px;
+	width:80%;
 }
 .t1_c2
 {
 	text-align:center;
-	width:35px;
+	width:20%;
 }
 .t2_c1
 {
 	text-align:left;
-	width:400px;
+	width:80%;
 }
 .t2_c2
 {
 	text-align:center;
-	width:35px;
+	width:20%;
 }
-.izcenojums_left table
+.izcenojums-left table
 {
 	table-layout: fixed;
-	width:495px;
+	width:100%;
 	border-collapse: collapse; 
 	font-size:11.98px;
+	padding:10px;
 }
 
-.izcenojums_left table tr:nth-child(even) 
+.izcenojums-left table tr:nth-child(even) 
 {
-
 	border-top: thin solid;
 	border-color:#dfd9cf;
 	background-color:#f2ebe1;
 } 
 
 
-.izcenojums_right table
+.izcenojums-right table
 {
 	table-layout: fixed;
-	width:495px;
+	width:100%;
 	border-collapse: collapse; 
 	font-size:11.98px;
 }
-.izcenojums_right table tr:nth-child(even) 
+.izcenojums-right table tr:nth-child(even) 
 {
-
 	border-top: thin solid;
 	border-color:#dfd9cf;
 	background-color:#f2ebe1;
@@ -322,51 +317,46 @@ form textarea
 {
 	display:block;
 	float:left;
-	margin-left:85px;
-	width:343px;
+	width:33.3%;
 	margin-top:30px;
 }
 .pakalpojumi-pa-vidu
 {
 	display:inline-block;
-	width:343px;
+	width:33.3%;
 	margin-top:30px;
 }
 .pakalpojumi-pa-labi
 {
 	display:inline-block;
 	float:right;
-	margin-right:85px;
-	width:343px;
+	width:33.3%;
 	margin-top:30px;
 }
-.pakalp_bilde
+.pakalpojumu-bilde
 {
 	display:inline;
 }
 
-.pakalp_bilde img
+.pakalpojumu-bilde img
 {
 	padding-right:20px;
 	float:left;
-
-
-
 }
-.pakalp_teksts
+.pakalpojumu-text
 {
 	color:#473a15;
-	 overflow: hidden;
-	 padding-right:10px;
-	 font-size:13.69px;
+	overflow: hidden;
+	padding-right:10px;
+	font-size:13.69px;
 }
-.pakalp_teksts h2
+.pakalpojumu-text h2
 {
 	color:#473a15;
-	 overflow: hidden;
-	 padding-right:10px;
-	 font-size:20.54px;
-	 font-weight:bold;
+	overflow: hidden;
+	padding-right:10px;
+	font-size:20.54px;
+	font-weight:bold;
 }
 
 .pakalpojumi-container
@@ -376,7 +366,7 @@ form textarea
 
 .par_teksts
 {
-	padding:30px 85px;
+	padding-top:30px;
 	color:white;
 }
 input {
@@ -399,8 +389,7 @@ input[type=submit] {
 .par_kreisais
 {
 	float:left;
-	margin-left:85px;
-	width:515px;
+	width:50%;
 	text-align:center;
 	height:300px;
 }
@@ -409,15 +398,14 @@ input[type=submit] {
 {
 	display:inline-block;
 	float:right;
-	margin-right:85px;
-	width:515px;
+	width:50%;
 	text-align:center;
 	height:300px;	
 }
 .par_kreisais2
 {
 	float:left;
-	width:600px;
+	width:50%;
 	text-align:left;
 	height:330px;
 }
@@ -426,7 +414,7 @@ input[type=submit] {
 {
 	display:inline-block;
 	float:right;
-	width:600px;
+	width:50%;
 	text-align:left;
 	height:330px;	
 }
@@ -450,21 +438,19 @@ input[type=submit] {
 .sertifikati_left
 {
 	display:block;
-	position:relative;
-	width:487px;
+	width:90%;
 	height:75px;
 	background-color:#624e36;
-	margin:0 28px 0 85px;
+	margin:0 28px 0 0;
 	
 }
 .sertifikati_right
 {
 	display:block;
-	position:relative;
-	width:487px;
+	width:90%;
 	height:75px;
 	background-color:#624e36;
-	margin:0 85px 0 28px;
+	margin:0 0 0 28px;
 	
 }
 .sertifikatu_saraksts
@@ -478,17 +464,17 @@ input[type=submit] {
 
 .darbimieka_apraksts_right
 {
-color:white;
-padding: 10px 85px 10px 28px;
-font-size:13.69px;
-line-height:25.68px;
+	color:white;
+	padding: 10px 0 10px 28px;
+	font-size:13.69px;
+	line-height:25.68px;
 }
 .darbimieka_apraksts_left
 {
-color:white;
-padding: 10px 28px 10px 85px;
-font-size:13.69px;
-line-height:25.68px;
+	color:white;
+	padding: 10px 28px 10px 0;
+	font-size:13.69px;
+	line-height:25.68px;
 }
 .vards_uzvards
 {
@@ -501,197 +487,59 @@ line-height:25.68px;
 	font-size:15.41px;
 	line-height:20.54px;
 }
-.lrzm 
-{	
-	display:inline-block;
-	background-image:url("_temp/klienti/LRZM_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-	}
-.lvm
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/LVM_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;	
-}
-
-.gibson 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/Gibson_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-}
-
-.busines-builder 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/Busines-Builder_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-}
-.baltic-s-forestry 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/Baltic-S-Forestry_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-}
-
-.statoil 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/Statoil_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-}
-
-.casamona 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/casamona_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-}
-
-.blueroots 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/blueroots_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-}
-
-.lvc 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/LVC_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-}
-
-.latvenergo 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/latvenergo_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-}
-
-.filterline 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/filterline_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-}
-
-.lmt 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/lmt_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-}
-
-.brivosta 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/brivosta_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-}
-
-.ventbunkers 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/ventbunkers_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-}
-
-.latio 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/latio_o.png");
-	background-repeat: no-repeat;
-    background-position: center;
-	margin:15px;
-}
-
-.ventspils 
-{
-	display:inline-block;
-	background-image:url("_temp/klienti/ventspils_o.png");
-	background-repeat: no-repeat;
-     background-position: center; 
-	 margin:15px;
-}
-.klientu_bildes
-{padding-left:75px;
-padding-right:75px;
-padding-bottom:30px;
-padding-top:20px;
-}
 
 .klientu_bildes
 {
-
+	padding-bottom:30px;
+	padding-top:20px;
 	text-align: justify;
 }
-.klientu_bildes:after {
+
+.klientu_bildes:after 
+{
 	content: "";
 	width: 100%;
 	display: inline-block;
-    }
+}
 
 
-.klientu_bildes img{
-
-display:inline-block;
-opacity:0;
-padding-top:5px;
+.klientu_bildes img
+{
+	display:inline-block;
+	padding:15px;
+	filter:grayscale(90%);
+	-webkit-filter:grayscale(90%);
+	-moz-filter:grayscale(90%);
+	-o-filter:grayscale(90%);
+	-ms-filter:grayscale(90%);
 }
 	
-.klientu_bildes img:hover{
+.klientu_bildes img:hover
+{
+	filter:grayscale(0);
+	-webkit-filter:grayscale(0);
+	-moz-filter:grayscale(0);
+	-o-filter:grayscale(0);
+	-ms-filter:grayscale(0);
+}
 
-	display:inline-block;
-opacity:1}
-
-.uz_augsu
+.uz-augsu
 {
 	display:block;
 	background-color:#bfb399;
-position:absolute;
-     left: 1133px;
-     top: 430px;
-	 z-index:2;
-	 border:1px solid white
+	position:absolute;
+    right: 40px;
+    top: 430px;
+	border:1px solid white
 }
-.uz_augsu img
+.uz-augsu img
 {
 	padding:5px;
 	opacity:0.4;
 
 }
-.uz_augsu img:hover
+.uz-augsu img:hover
 {
 	padding:5px;
 	opacity:1;
 }
-
