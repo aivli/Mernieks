@@ -1,11 +1,15 @@
 /* This CSS file for project Mernieks - includes all CSS formating.*/
 
 /*First formating part is for main project sections - includes body formating, overal content formating and project section formating */
-body 
+body
 {
 	background-color:#282828;
 	font-family: 'Open Sans', sans-serif;
 	margin:0;
+}
+a img 
+{
+    border: 0;
 }
 
 .content
@@ -13,24 +17,19 @@ body
 	background-image: url("img/fons_gaiss_texture.png");
 	overflow:hidden;
 }
-.section-container
+.section-container, .section-container-brown, .header-container, .client-container
 {
 	padding-left:85px;
 	padding-right:85px;
 	overflow:hidden;
 }
-.section-container-b
+.section-container-brown
 {
-	padding-left:85px;
-	padding-right:85px;
 	background-image: url("img/brunais_fons.png");
-	overflow:hidden;
 }
 .section-name
 {
-
 	border-bottom: 1px dashed #7f7065;
-	text-transform: uppercase;
 }
 .section-name h1
 {
@@ -42,24 +41,28 @@ body
 	margin:0;
 	font-weight:normal;
 }
+.col3
+{
+	float:left;
+	width:33.3%;
+	margin-top:30px;
+	overflow:hidden;
+}
 /* Header section formating - includes LOGO, Main menu and Language switcher */
 
 .header-container
 {
-	padding-left:85px;
-	padding-right:85px;
-	overflow:hidden;
 	background-color: #473a2d;
 }
-.header-container a 
+.header-container a
 {
 	text-decoration:none;
 	padding: 10px 5px;
-	color: white;
+	color:white;
 }
 .header-container li:hover
 {
-	background: #5b4d3b;	
+	background: #5b4d3b;
 }
 .logo
  {
@@ -68,6 +71,7 @@ body
 	width: 180px;
 	padding: 20px 20px 0 0;
 }
+
 .navigation-container
 {
 	display:block;
@@ -76,7 +80,7 @@ body
 	font-size:12.84px;
 }
 .navigation
-{ 
+{
 	display:block;
 	float:left;
 	margin-top:13px;
@@ -88,7 +92,7 @@ body
 	padding-left:0;
 	padding-right:30px;
 }
-.navigation ul li 
+.navigation ul li
 {
 	display:inline-block;
 	margin:0;
@@ -115,11 +119,12 @@ body
 	padding-left:30px;
 	margin:12px 0;
 }
+
 /* Slider area formating - includes Slide image, Slide heading and text, Buttons (previos, next, and bottom buttons)*/
 
 .slider-container
 {
-	Display:block;
+	display:block;
 	position:relative;
     z-index:1;
 	overflow:hidden;
@@ -215,15 +220,6 @@ body
 	overflow:hidden;
 }
 
-.services-column
-{
-	display:block;
-	float:left;
-	width:33.3%;
-	margin-top:30px;
-	overflow:hidden;
-}
-
 .services-image img
 {
 	padding-right:20px;
@@ -235,6 +231,7 @@ body
 	overflow: hidden;
 	padding-right:30px;
 	font-size:13.69px;
+	line-height:24px;
 }
 .services-text li
 {
@@ -245,14 +242,27 @@ body
 	list-style-type: none;
 	padding-left:0;
 }
-
+.services-text ul li:after 
+{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 20%;
+	margin:10px 0;
+    background: #c7c5be;
+}
+.services-text ul li:last-child:after
+{
+	content: "";
+	display:none;
+}
 .services-text h2
 {
 	color:#473a15;
 	overflow: hidden;
 	padding-right:10px;
-	font-size:20.54px;
-	font-weight:bold;
+	font-size:24px;
+	font-weight:500;
 }
 
 /* Formating for pricing area */
@@ -297,15 +307,15 @@ body
 {
 	table-layout: fixed;
 	width:100%;
-	border-collapse: collapse; 
-	padding:15px;
+	border-collapse: collapse;
+	padding:15px 0;
 	border-bottom:thin solid;
 	border-color:#dfd9cf;
 }
 .pricing-column-table table th
 {
 	padding:10px 15px;
-	width:93%;
+	width:85%;
 	border-bottom:thin solid;
 	border-color:#dfd9cf;
 	font-weight:normal;
@@ -313,7 +323,7 @@ body
 }
 .pricing-column-table table th+th
 {
-	width:7%;
+	width:15%;
 	font-size:17px;
 	text-align:center;
 	font-weight:600;
@@ -321,26 +331,27 @@ body
 .pricing-column-table table td
 {
 	padding:10px 15px;
-	width:93%;
+	width:85%;
 }
 .pricing-column-table table td+td
 {
-	width:7%;
+	width:15%;
 	font-size:17px;
 	text-align:center;
 	font-weight:600;
 }
-.pricing-column-table table tr:nth-child(even) 
+.pricing-column-table table tr:nth-child(even)
 {
 	background-color:#f2ebe1;
-} 
+}
 
-/* About us area formating. Includes - introductioning text on top, Employee name and contacts, Certification information, Employee discription */ 
+/* About us area formating. Includes - introductioning text on top, Employee name and contacts, Certification information, Employee discription */
 
 .about-introductioning-text
 {
 	padding-top:30px;
 	color:white;
+	line-height:32px;
 }
 .about-column
 {
@@ -362,14 +373,13 @@ body
 {
 	display:block;
 	width:95%;
-	height:65px;
 	background-color:#624e36;
 	margin:auto;
+	padding-top:5px;
 }
 .certificate-list
 {
 	display:table;
-	height:45px;
 	margin:auto;
 }
 .certificate
@@ -396,36 +406,30 @@ body
 {
 	padding:15px;
 	font-size:13.69px;
-	line-height:25.68px;
+	line-height:32px;
 }
 .emloyee-name
 {
 	font-size:30.81px;
 }
-.emloyee-contacts
+.emloyee-contacts a
 {
+	text-decoration:none;
+	display:block;
 	font-size:15.41px;
 	line-height:20.54px;
+	color:#c7a457;
 }
 
 /* Client LOGO placement and formating*/
 
-.client-container
-{
-	padding-left:85px;
-	padding-right:85px;
-	Display:block;
-	position:relative;
-    z-index:1;
-	overflow:hidden;
-}
 .client-logos
 {
 	padding-bottom:30px;
 	padding-top:20px;
 	text-align: justify;
 }
-.client-logos:after 
+.client-logos:after
 {
 	content: "";
 	width: 100%;
@@ -455,68 +459,77 @@ body
 .map
 {
 	display:block;
-	width:33.3%;
-	float:left;
-	margin:75px 0 30px 0;
+	margin-top:45px;
 }
 .contact-form
 {
 	display:block;
-	width:33.3%;
-	float:left;
-	padding-top:59px;
-	padding-bottom:20px;
 	color:#9d8343;
+	padding-top:45px;
+	padding-bottom:50px;
+	text-align: justify;
+
 }
 .contact-form p
 {
 	color:#f9e09e;
+	margin:0;
 }
 .contact-information
-{ 
+{
 	display:block;
-	float:left;
-	width:33.3%;
-	padding-top:30px;
 	text-align:center;
 	color:#9d8343;
+	line-height:30px;
+	margin-top:45px;
+	
 }
 .contact-information address
 {
 	font-style:normal;
+
 }
 .contact-information a
 {
 	text-decoration:none;
 	color:#f9e09e;
 }
-
-form input 
+.contact-form form
 {
+	margin-left:-10px;
+}
+form input
+{
+	display:inline-block;
 	background-color:#7f6c42;
 	color:#a38a55;
 	border:none;
 	padding:8px 5px;
-	margin:5px;
+	margin:15px 0 15px 10px;
 }
 form textarea
 {
-	margin:5px;
+	margin:5px 5px 5px 10px;
 	background-color:#7f6c42;
 	color:#a38a55;
 	border:none;
 	padding:9px;
+	width:98%;
 }
-input[type=submit] 
+input[type=submit]
 {
-    width: 100px;
-	height: 30px;
-	color:#f9e09e;
+	color:#ffffff;
+	padding:8px 10px;
+	background-color:#b1965c;
 	font-weight: bold;
 	vertical-align:middle;
 }
+input[type=text]
+{
+width:44%;
+}
 
-/* To Top button formating and plasment*/
+/* To Top button formating and placement*/
 
 .to-top
 {
